@@ -1,0 +1,16 @@
+<div>
+  <button type="button" class="" {{action "loadData"}}>
+    generate table
+  </button>
+  {{#if loading}}
+    <p>It's loading data...</p>
+  {{else if hasElements}}
+    <table class="table table-striped latest-data">
+      <tbody>
+        {{#each photosList as |photo|}}
+          {{photo-row item=photo}}
+        {{/each}}
+      </tbody>
+    </table>
+  {{/if}}
+</div>
