@@ -1,8 +1,19 @@
 # Perf-test
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Performance can mean a lot of things. Let's examine three key measurements:
 
+Initial Script Loading Times
+Rendering Script Times
+Re-rendering Script Times on Changes
+
+When have to render a lot of data, for example a table with let's say more than 5000 rows, it's important to take deep atention about timings and performance response.
+
+This first approach is to do a visual, loading test.
+
+We are going to retrieve a list of 5000 elements (photos), and render a simple table that will list all of them.
+
+##### if this simple example takes a lot of time, I cannot imagine how much it takes to create a more sophisticated table
+-------------------------------------------
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -50,4 +61,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
