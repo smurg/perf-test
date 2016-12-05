@@ -1,9 +1,9 @@
-<div>
+<div class="container-fluid">
   <button type="button" class="" {{action "loadData"}}>
     generate table
   </button>
   {{#if loading}}
-    <p>It's fetching data from api...</p>
+    <p>It's fetching data from api, please wait...</p>
   {{else if hasElements}}
     <table class="table table-striped latest-data">
       <tbody>
